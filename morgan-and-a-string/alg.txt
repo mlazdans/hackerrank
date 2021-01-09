@@ -1,30 +1,25 @@
-ANNANBAN
-NNANAAN
-
-// nomem: ANNANAANNANAANN
-// mem:   ANNANAANNNANAAN
-
-A
-NNANBAN
-NNANAAN
-
-AAABB
-AAABA
-
-ABACABA
-ABACABA
-
 ja A un B tukši, tad beigas
 
-ja A tukšs, tad izvēlās b un palielina indexu
+citādi
 
-ja B tukšs, tad izvēlās a un palielina indexu
+ja A tukšs, tad izvēlās B atlikumu, beigas
 
-ja b<a tad izvēlās b un palielina indexu
+citādi
 
-ja a<b tad izvēlās a un palielina indexu
+ja B tukšs, tad izvēlās A atlikumu, beigas
 
-ja a=b tad
-	meklē kamēr atrod atšķirīgus, izvēlas mazāko un palielina indexu
-	ja neatrod, tad izvēlas vienalga kuru un palielina indexu
-	atcerās pozīciju kurā c<a|b katrā virknē
+citādi
+
+ja b<a tad izvēlās b un palielina B indexu
+
+citādi
+
+ja a<b tad izvēlās a un palielina A indexu
+
+citādi // šeit jau a=b
+
+ja atrod  pirmo atšķirīgo char no a=b tad
+	attiecīgi izvēlās pirmo vienu virkni un palielina indexu+1
+citādi
+	sazipo vienādos chars, skatu saglabā l
+	turpina rekursīvi A+l un B+l un izvēlas "mazāko" virkni
