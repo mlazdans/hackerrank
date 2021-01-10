@@ -1,5 +1,7 @@
 <?php
 
+$solution = "solution.php";
+
 $tests = [
 	"input.txt"=>"output.txt",
 	"input1.txt"=>"output1.txt",
@@ -11,7 +13,7 @@ $tests = [
 ];
 
 foreach($tests as $testFile=>$resFile){
-	$cmd = "php solution.php <$testFile";
+	$cmd = "php $solution <$testFile";
 	print "$cmd\n";
 	print "Testing: $testFile...";
 
