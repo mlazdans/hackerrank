@@ -11,3 +11,7 @@ function printTable($table){
 	}
 	print "</table>";
 }
+
+function array_print($arr){
+	return "[".join(",", $arr)."]";
+}
